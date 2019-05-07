@@ -3,15 +3,17 @@
     height: 50px;
     background-color: #bada55;
     /*Applying tansitions here ensures that the transition properties apply to the box at all times*/
-    transition-property: width, background-color;
+    transition-property: width, background-color; /* all argument applies transition to all elements on page*/
     transition-duration: 2s;
-    transition-timing-function: ease-in-outs;
+    /*ease-in-out = slow start, starndard mid, slow finish*/
+    transition-timing-function: ease-in-out;
     margin:5px;
 }
 
 .box:hover{
     /*Properties only trigger during the Hover Phase*/
     width: 150px;
+    height: 100px;
     background-color: #e84610; /*RED*/
 
     /* if the transition properties are here, they only applied to the box in hover state
