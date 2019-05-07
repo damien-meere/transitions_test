@@ -2,12 +2,20 @@
     width: 50px;
     height: 50px;
     background-color: #bada55;
-    
+    /*Applying tansitions here ensures that the transition properties apply to the box at all times*/
+    transition-property: width, background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-outs;
+    margin:5px;
 }
 
 .box:hover{
+    /*Properties only trigger during the Hover Phase*/
     width: 150px;
+    background-color: #e84610; /*RED*/
+
+    /* if the transition properties are here, they only applied to the box in hover state
     transition-property: width;
     transition-duration: 2s;
-    
+    */
 }
